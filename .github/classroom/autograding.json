@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1 (4x4)",
+      "setup": "javac src/SpiralMatrix.java",
+      "run": "java -cp src SpiralMatrix",
+      "input": "4 4\n1 2 3 4\n5 6 7 8\n9 10 11 12\n13 14 15 16",
+      "output": "1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Rectangular (3x4)",
+      "setup": "javac src/SpiralMatrix.java",
+      "run": "java -cp src SpiralMatrix",
+      "input": "3 4\n1 2 3 4\n5 6 7 8\n9 10 11 12",
+      "output": "1 2 3 4 8 12 11 10 9 5 6 7",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Single Row (1x5)",
+      "setup": "javac src/SpiralMatrix.java",
+      "run": "java -cp src SpiralMatrix",
+      "input": "1 5\n10 20 30 40 50",
+      "output": "10 20 30 40 50",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Single Column (5x1)",
+      "setup": "javac src/SpiralMatrix.java",
+      "run": "java -cp src SpiralMatrix",
+      "input": "5 1\n1\n2\n3\n4\n5",
+      "output": "1 2 3 4 5",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
